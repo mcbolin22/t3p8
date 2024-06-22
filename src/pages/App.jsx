@@ -1,6 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Navbar';
+import logo from '../logo.svg';
+import '../stylesheets/App.css';
+import Navbar from '../Navbar';
 
 
 let favouriteMovies = [
@@ -17,12 +17,12 @@ function App() {
     <div className="App">
 
       <Navbar />
-      
+
       <header className="App-header">
         <h1>Hello World!</h1>
         <h1>Favourite Movies</h1>
         <ul>
-          { favouriteMovies.map((movie, index) => {
+          {favouriteMovies > 0 && favouriteMovies.map((movie, index) => {
             return <li key={movie + "-" + index}>
               {movie}
             </li>
