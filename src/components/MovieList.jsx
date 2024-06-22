@@ -29,9 +29,9 @@ export default function MovieList() {
                 //     return <MovieCard key={index + "-" + movie} bobsBurgers={movie}/>
                 // }
                 
-                if (movie.length === 0){
+                if (movie.length <= 1){
                     return null;
-                }
+                } 
                 
                 return <MovieCard key={index + "-" + movie} bobsBurgers={movie}/>
 

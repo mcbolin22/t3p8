@@ -4,12 +4,17 @@ import './stylesheets/App.css';
 // import App from './pages/App';
 import App2 from './pages/App2';
 import reportWebVitals from './reportWebVitals';
+import MovieList from './components/MovieList.jsx';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <App2 />
+    <App2>
+      <MovieList/>
+    </App2>
   </React.StrictMode>
 );
 
