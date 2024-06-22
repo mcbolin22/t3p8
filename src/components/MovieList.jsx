@@ -1,3 +1,9 @@
+// this is ES6/ESM/module project import syntax
+import MovieCard from "./MovieCard.jsx";
+
+// CommonJS/NodeJS project import syntax:
+// const MovieCard = require("./MovieCard.jsx")
+
 let favouriteMovies = [
     "Aliens",
     "Dune",
@@ -12,7 +18,7 @@ export default function MovieList() {
     return (
         <section>
             {favouriteMovies.map((movie, index) => {
-                return <MovieCard key={index} bobsBurgers={movie}/>
+                return <MovieCard key={index + "-" + movie} bobsBurgers={movie}/>
 
             })}
         </section>

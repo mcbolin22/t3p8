@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './stylesheets/App.css';
-import App from './pages/App';
+// import App from './pages/App';
 import App2 from './pages/App2';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
     <App2 />
   </React.StrictMode>
 );
